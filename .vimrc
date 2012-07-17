@@ -1,3 +1,4 @@
+set nocompatible
 filetype plugin indent on
 filetype indent on
 
@@ -28,3 +29,6 @@ set colorcolumn=+1 "textwidth+1
 highlight ColorColumn ctermbg=5
 " always show statusline
 set laststatus=2
+" show last character
+set list listchars=tab:▸\ ,eol:¬
+hi NonText ctermfg=5 guifg=gray
