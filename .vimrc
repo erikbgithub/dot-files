@@ -2,6 +2,8 @@ set nocompatible
 filetype plugin indent on
 filetype indent on
 
+"encoding
+scriptencoding utf-8
 set encoding=utf-8
 
 set ruler
