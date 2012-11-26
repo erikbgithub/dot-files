@@ -22,7 +22,6 @@ set tabstop=4
 set wrap
 
 set textwidth=79
-set number "line numbering
 set cursorline
 
 "show the problem column where you should break the line

@@ -26,3 +26,14 @@ sdcard() {
     cd ./tmp-eglibc/deploy/images/hidav-ti81xx
     ./ti814x-bootable-sdcard.sh $1
 }
+
+ertex() {
+    if [ -z "$1" ]; then
+        echo "need to set param: <filename>"
+    else
+        pdflatex $1.tex -interaction=nonstopmode
+        bibtex $1.aux
+        pdflatex $1.tex -interaction=nonstopmode
+        pdflatex $1.tex -interaction=nonstopmode
+    fi
+}
