@@ -4,6 +4,17 @@ export EDITOR=vim
 
 source .bash_aliases
 
+# shortcut for github repository cloning (GitHub Clone)
+# credit goes to chepner for this optimization:
+# http://stackoverflow.com/a/15361490/131120
+#
+# :param repo: a string containing the end of the github url
+ghc () { git clone git@github.com:"${@?need to set param: <dev>/<proj>}"; }
+
+
+# a HidaV shortcut to the dev shell
+#
+# :param recipe: the name of the recipe that should be edited
 devshell() {
     if [ -z "$1" ]; then
         echo "need to set param: <recipe-name>"
@@ -14,6 +25,9 @@ devshell() {
     fi
 }
 
+# a HidaV shortcut to building sd cards for HidaV devices
+#
+# :param usb: the path to the sd card, optional
 sdcard() {
     [-z $1] && 1=/dev/sdc
     cd ~/coding/Hidav
@@ -22,6 +36,9 @@ sdcard() {
     ./ti814x-bootable-sdcard.sh $1
 }
 
+# builds a complete tex file with all the indexes, libraries and so on.
+#
+# :param filename: which file should be compiled
 ertex() {
     if [ -z "$1" ]; then
         echo "need to set param: <filename>"
