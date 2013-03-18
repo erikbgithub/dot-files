@@ -1,8 +1,13 @@
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u\[\033[00m\]:\[\033[01;32m\]\t\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
 export LANG=en_US.UTF-8 #this way screen will also start wtih utf8
 export EDITOR=vim
 
-source .bash_aliases
+source ~/.bash_aliases
 
 # shortcut for github repository cloning (GitHub Clone)
 # credit goes to chepner for this optimization:
