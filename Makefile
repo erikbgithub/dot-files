@@ -1,7 +1,7 @@
 #your config comes here:
 SRC_DIR=$(dir $(realpath $(lastword $(MAKEFILE_LIST))))
 DEST_DIR=$(HOME)/
-FILES := .bash_aliases .bashrc .gitconfig .vimrc
+FILES := .bash_aliases .bashrc .bash_profile .gitconfig .vimrc
 
 
 #generated, don't touch if not absolutely necessary
@@ -11,7 +11,7 @@ dest_FILES := $(FILES:%=$(DEST_DIR)%)
 awesome_config_path=$(DEST_DIR).config/awesome/
 
 #some stuff for ease of handling things
-phonies := clean clean-awesome install awesome
+phonies := clean clean-awesome install awesom
 
 .PHONY:  $(phonies)
 
