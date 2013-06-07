@@ -1,0 +1,12 @@
+# happily taken from
+# http://bryan-murdock.blogspot.de/2008/02/screen-as-serial-terminal.html
+
+# kill startup msgs
+startup_message off
+
+# def bigger scrollback
+defscrollback 1024
+
+# status bar
+hardstatus on
+hardstatus alwayslastline "%{rk}%H %{gk}%c %{yk}%M%d %{wk}%?%-Lw%?%{bw}%n*%f %t%?(%u)%?%{wk}%?%+Lw%?"
