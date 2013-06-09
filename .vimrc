@@ -36,3 +36,6 @@ hi NonText ctermfg=5 guifg=gray
 "allows backspace to delete stuff, according to
 "http://vim.wikia.com/wiki/Backspace_and_delete_problems
 set backspace=indent,eol,start
+
+"enable a mode in which you can copy and paste from other sources easily
+set pastetoggle=<F2>
