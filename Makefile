@@ -11,7 +11,7 @@ dest_FILES := $(FILES:%=$(DEST_DIR)%)
 awesome_config_path=$(DEST_DIR).config/awesome/
 
 #some stuff for ease of handling things
-phonies := clean clean-awesome install awesom
+phonies := clean clean-awesome install awesome
 
 .PHONY:  $(phonies)
 
