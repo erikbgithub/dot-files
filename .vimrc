@@ -19,6 +19,8 @@ set ffs=unix,dos,mac
 set expandtab
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
+set shiftround
 set wrap
 
 set textwidth=79
