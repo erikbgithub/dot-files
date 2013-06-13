@@ -41,3 +41,9 @@ set backspace=indent,eol,start
 
 "enable a mode in which you can copy and paste from other sources easily
 set pastetoggle=<F2>
+
+" Persistant undo
+set undofile
+set undodir=$HOME/.vim/undo
+set undolevels=1000
+set undoreload=10000
