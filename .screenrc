@@ -1,4 +1,4 @@
-# happily taken from
+# the following stuff happily taken from
 # http://bryan-murdock.blogspot.de/2008/02/screen-as-serial-terminal.html
 
 # kill startup msgs
@@ -10,3 +10,17 @@ defscrollback 1024
 # status bar
 hardstatus on
 hardstatus alwayslastline "%{rk}%H %{gk}%c %{yk}%M%d %{wk}%?%-Lw%?%{bw}%n*%f %t%?(%u)%?%{wk}%?%+Lw%?"
+
+# things taken from
+# http://www.guckes.net/Setup/screenrc
+
+# automatically detach on hanghup
+autodetach on
+
+defutf8 on
+term xterm-color
+vbell on
+shell bash
+
+# no crlf for end-of-lines
+crlf off
