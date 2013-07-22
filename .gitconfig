@@ -17,3 +17,7 @@
 
 [color]
 	ui = True
+[merge]
+	conflictstyle = diff3
+	tool = vimdiff
+	prompt = false
