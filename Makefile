@@ -1,7 +1,7 @@
 #your config comes here:
 SRC_DIR=$(dir $(realpath $(lastword $(MAKEFILE_LIST))))
 DEST_DIR=$(HOME)/
-FILES := .bash_aliases .bashrc .bash_profile .gitconfig .vim .vimrc .screenrc
+FILES := .bash_aliases .bashrc .bash_profile .gitconfig .vim .vimrc .screenrc .hgrc
 
 
 #generated, don't touch if not absolutely necessary
