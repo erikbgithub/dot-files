@@ -19,7 +19,7 @@ Usage
 Prerequisits:
 
  * Although parts of it might work on other distributions as well, I only
-   tested these on Ubuntu 12.x machines. So you will probably achieve the best
+   tested these on Ubuntu 13.4 machines. So you will probably achieve the best
    results on Ubuntus or at least Debian-likes.
  * Make sure that your own files are **backed up** before you start using this,
    because I generally remove the corresponding system files before installing
@@ -27,6 +27,9 @@ Prerequisits:
 
 Let's go:
 
+    # make sure you have the newest git installed:
+    $ sudo add-apt-repository ppa:git-core/ppa
+    $ sudo apt-get install git
     # download this repo:
     $ git clone git@github.com:erikb85/dot-files
     # install it
