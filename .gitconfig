@@ -21,3 +21,10 @@
 	conflictstyle = diff3
 	tool = vimdiff
 	prompt = false
+
+[alias]
+	ci = commit -s
+	lol = log --oneline --graph --decorate --all
+	st = status
+	stage = add
+	unstage = reset HEAD
