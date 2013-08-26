@@ -40,5 +40,5 @@ What do you think?
 ==================
 
 Feedback is always appreciated. If you find errors, optimizations or just want
-to discuss an idea, don't hesitate to contact me at [my Github
-account](https://github.com/erikb85).
+to discuss an idea, don't hesitate to
+[write an Issue](https://github.com/erikb85/dot-files/issues/new).
