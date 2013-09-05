@@ -25,6 +25,7 @@
 [alias]
 	ci = commit -s
 	lol = log --oneline --graph --decorate --all
+	topush = log --oneline --graph --decorate --all master ^origin/master
 	st = status
 	stage = add
 	unstage = reset HEAD
