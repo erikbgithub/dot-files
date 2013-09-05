@@ -24,3 +24,6 @@ shell bash
 
 # no crlf for end-of-lines
 crlf off
+
+# flow control
+flow off
