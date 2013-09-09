@@ -59,3 +59,4 @@ ertex() {
         pdflatex $1.tex -interaction=nonstopmode
     fi
 }
+PATH=$PATH:/home/erikb85/coding/golang/bin
