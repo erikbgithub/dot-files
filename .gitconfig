@@ -23,10 +23,21 @@
     prompt = false
 
 [alias]
+    # all useful commit combinations in short
     ci = commit -s
+    cia = commit -as
+    cim = commit -sm
+    ciam = commit -asm
+
+    # log like gitk
     lol = log --oneline --graph --decorate
     lola = log --oneline --graph --decorate --all
+    # only show me what is not pushed yet
     top = log --oneline --graph --decorate --all master ^origin/master
+    # only show me what is not merged from remote yet
+    new = log --oneline --graph --decorate --all ^master origin/master
+
+    #these are not really used yet
     st = status
     stage = add
     unstage = reset HEAD
