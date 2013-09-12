@@ -7,26 +7,26 @@
 # platform
 
 [user]
-	name = Erik Bernoth
-	email = erik.bernoth@gmail.com
+    name = Erik Bernoth
+    email = erik.bernoth@gmail.com
 [core]
-	editor = vim
+    editor = vim
 
 [push]
-	default = simple
+    default = simple
 
 [color]
-	ui = True
+    ui = True
 [merge]
-	conflictstyle = diff3
-	tool = vimdiff
-	prompt = false
+    conflictstyle = diff3
+    tool = vimdiff
+    prompt = false
 
 [alias]
-	ci = commit -s
-	lol = log --oneline --graph --decorate
-	lola = log --oneline --graph --decorate --all
-	top = log --oneline --graph --decorate --all master ^origin/master
-	st = status
-	stage = add
-	unstage = reset HEAD
+    ci = commit -s
+    lol = log --oneline --graph --decorate
+    lola = log --oneline --graph --decorate --all
+    top = log --oneline --graph --decorate --all master ^origin/master
+    st = status
+    stage = add
+    unstage = reset HEAD
