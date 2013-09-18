@@ -33,7 +33,7 @@
     lol = log --oneline --graph --decorate
     lola = log --oneline --graph --decorate --all
     # only show me what is not pushed yet
-    top = log --oneline --graph --decorate --all master ^origin/master
+    top = log --oneline --graph --decorate master ^origin/master
     # only show me what is not merged from remote yet
     new = log --oneline --graph --decorate --all ^master origin/master
 
