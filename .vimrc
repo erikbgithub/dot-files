@@ -47,3 +47,8 @@ set undofile
 set undodir=$HOME/.vim/undo
 set undolevels=1000
 set undoreload=10000
+
+" no backups, what are VCS there for?
+set nobackup
+set nowritebackup
+set noswapfile
