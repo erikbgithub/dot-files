@@ -33,9 +33,11 @@
     lol = log --oneline --graph --decorate
     lola = log --oneline --graph --decorate --all
     # only show me what is not pushed yet
-    top = "!git log --oneline --graph --decorate `git rev-parse --abbrev-ref HEAD` ^origin/`git rev-parse --abbrev-ref HEAD`"
+    top = log --oneline --graph --decorate @{u}..
+    topold = "!git log --oneline --graph --decorate `git rev-parse --abbrev-ref HEAD` ^origin/`git rev-parse --abbrev-ref HEAD`"
     # only show me what is not merged from remote yet
-    new = "!git log --oneline --graph --decorate ^`git rev-parse --abbrev-ref HEAD` origin/`git rev-parse --abbrev-ref HEAD`"
+    new = log --oneline --graph --decorate ..@{u}
+    newold = "!git log --oneline --graph --decorate ^`git rev-parse --abbrev-ref HEAD` origin/`git rev-parse --abbrev-ref HEAD`"
 
     #these are not really used yet
     st = status
