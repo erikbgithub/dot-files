@@ -52,3 +52,7 @@ set undoreload=10000
 set nobackup
 set nowritebackup
 set noswapfile
+
+" depend case sensitivity on input
+set ignorecase
+set smartcase
