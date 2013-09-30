@@ -60,9 +60,3 @@ ertex() {
     fi
 }
 PATH=$PATH:/home/erikb85/coding/golang/bin
-
-# Virtualenv stuff
-pip install virtualenvwrapper
-mkdir -p ~/.venvs
-export WORKON_HOME=$HOME/.venvs
-source /usr/local/bin/virtualenvwrapper.sh
