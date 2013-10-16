@@ -56,3 +56,7 @@ set noswapfile
 " depend case sensitivity on input
 set ignorecase
 set smartcase
+
+" macros
+
+let @f = '{gq}'
