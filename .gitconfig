@@ -23,6 +23,7 @@
     prompt = false
 
 [alias]
+    co = checkout
     # all useful commit combinations in short
     ci = commit -s
     cia = commit -as

@@ -59,4 +59,4 @@ set smartcase
 
 " macros
 
-let @f = '{gq}'
+let @f = '{gq}'
