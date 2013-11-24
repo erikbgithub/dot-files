@@ -1,8 +1,8 @@
 #your config comes here:
 SRC_DIR=$(dir $(realpath $(lastword $(MAKEFILE_LIST))))
 DEST_DIR=$(HOME)/
-DIRS := .i3 .config/upstart
-FILES := .bash_aliases .bashrc .bash_profile .gitconfig .vim .vimrc .screenrc .hgrc .zshrc .zsh-update .i3/config .config/upstart/touchpad-deact.conf
+DIRS := .i3
+FILES := .bash_aliases .bashrc .bash_profile .gitconfig .vim .vimrc .screenrc .hgrc .zshrc .zsh-update .i3/config
 
 
 #generated, don't touch if not absolutely necessary
