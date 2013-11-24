@@ -148,3 +148,6 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# AUTOSTART
+exec touch_id=`xinput list | grep -i touchpad | awk '{ print $6 }' | sed 's/id=//'`; xinput set-prop $touch_id "Device Enabled" 0
