@@ -28,3 +28,7 @@ autoload -U promptinit
 promptinit
 autoload -U colors && colors
 PROMPT="%{$fg[red]%}%n%{$reset_color%}@%M:%{$fg[green]%}%*%{$reset_color%}:%{$fg[cyan]%}%~%{$reset_color%}$ "
+
+#virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+source /etc/bash_completion.d/virtualenvwrapper
