@@ -116,6 +116,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-msg exit"
+# lock window
+bindsym $mod+Mod1+l exec "i3lock -c 222222"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -151,4 +153,7 @@ bar {
 
 # AUTOSTART
 exec touch_id=`xinput list | grep -i touchpad | awk '{ print $6 }' | sed 's/id=//'`; xinput set-prop $touch_id "Device Enabled" 0
-exec xrandr --output VGA-1 --off
+#exec xrandr --output VGA-1 --off
+#exec xrandr --output VGA-2 --off
+exec i3-sensible-terminal
+exec --no-startup-id i3-msg 'workspace 2; exec firefox; workspace 1'
