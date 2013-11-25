@@ -19,7 +19,9 @@ compinit
 # End of lines added by compinstall
 
 # command-not-found activation
-source ~/.oh-my-zsh/plugins/command-not-found/command-not-found.plugin.zsh
+if [[ -s '/etc/zsh_command_not_found' ]]; then
+    source /etc/zsh_command_not_found
+fi
 
 # prompt
 autoload -U promptinit
