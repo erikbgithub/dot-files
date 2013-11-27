@@ -19,13 +19,18 @@ compinit
 # End of lines added by compinstall
 
 # command-not-found activation
-source ~/.oh-my-zsh/plugins/command-not-found/command-not-found.plugin.zsh
+if [[ -s '/etc/zsh_command_not_found' ]]; then
+    source /etc/zsh_command_not_found
+fi
 
 # prompt
 autoload -U promptinit
 promptinit
 autoload -U colors && colors
 PROMPT="%{$fg[red]%}%n%{$reset_color%}@%M:%{$fg[green]%}%*%{$reset_color%}:%{$fg[cyan]%}%~%{$reset_color%}$ "
-
 # keys
 export GPGKEY=C1DF39FF
+
+#virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+source /etc/bash_completion.d/virtualenvwrapper
