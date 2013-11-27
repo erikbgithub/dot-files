@@ -26,3 +26,6 @@ autoload -U promptinit
 promptinit
 autoload -U colors && colors
 PROMPT="%{$fg[red]%}%n%{$reset_color%}@%M:%{$fg[green]%}%*%{$reset_color%}:%{$fg[cyan]%}%~%{$reset_color%}$ "
+
+# keys
+export GPGKEY=C1DF39FF
