@@ -47,3 +47,5 @@
     st = status
     stage = add
     unstage = reset HEAD
+[mergetool]
+	keepBackup = false
