@@ -36,6 +36,7 @@
     lol = log --oneline --graph --decorate
     lola = log --oneline --graph --decorate --all
     lols = log --oneline --graph --decorate --all --max-count=10
+    lolf = log --oneline --graph --decorate dev..
     # only show me what is not pushed yet
     top = log --oneline --graph --decorate @{u}..
     topold = "!git log --oneline --graph --decorate `git rev-parse --abbrev-ref HEAD` ^origin/`git rev-parse --abbrev-ref HEAD`"
