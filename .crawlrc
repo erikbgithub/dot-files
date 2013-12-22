@@ -1,0 +1,7 @@
+# change keyboard to QWERTZ not QWERTY
+bindkey = [z] CMD_MOVE_UP_LEFT
+bindkey = [Z] CMD_RUN_UP_LEFT
+bindkey = [^Z] CMD_OPEN_DOOR_UP_RIGHT
+bindkey = [y] CMD_CAST_SPELL
+bindkey = [Y] CMD_FORCE_CAST_SPELL
+bindkey = [^Y] CMD_SUSPEND_GAME
