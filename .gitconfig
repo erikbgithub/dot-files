@@ -50,3 +50,7 @@
     unstage = reset HEAD
 [mergetool]
 	keepBackup = false
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
