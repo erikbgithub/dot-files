@@ -1,6 +1,7 @@
-alias vim="vim -u ~/.vimrc"
+alias vim="nvim -u ~/.nvimrc"
 alias ll="ls -lha"
 alias gitk="gitk --all &"
+alias dot-files="cd ~/coding/dot-files"
 
 #looking for aliases even with sudo
 alias sudo="sudo "
