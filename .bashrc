@@ -60,3 +60,10 @@ ertex() {
     fi
 }
 PATH=$PATH:/home/erikb85/coding/golang/bin
+
+#virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+# add manual go installation
+export PATH=$PATH:/usr/local/go/bin

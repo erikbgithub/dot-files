@@ -1,6 +1,13 @@
 set nocompatible
+
+if exists("g:did_load_filetypes")
+    filetype off
+    filetype plugin indent off
+endif
+set runtimepath+=/usr/local/go/misc/vim
 filetype plugin indent on
 filetype indent on
+syntax on
 
 "encoding
 scriptencoding utf-8
@@ -60,3 +67,6 @@ set smartcase
 " macros
 
 let @f = '{gq}'
+
+" go fmt go files automatically at save
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
