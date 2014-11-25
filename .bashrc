@@ -78,3 +78,11 @@ source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 # add manual go installation
 export PATH=$PATH:/usr/local/go/bin
 
+
+deactivate-touchpad() {
+    touchpadid=`xinput | awk -F= '/Synaptics TouchPad/ { print $2; }' | awk '{print $1}'`
+    if [[ $touchpadid =~ [[:digit:]] ]] ; then
+        echo "touchpad is $touchpadid, deactivate it"
+        xinput set-prop "$touchpadid" "Device Enabled" 0
+    fi
+}
