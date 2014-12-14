@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Touchpad Deactivator
+Comment=I hate the touchpad, get rid of it
+Exec=/bin/bash -c "source ~/.bashrc; deactivate-touchpad"
+Terminal=false
+Type=Application
+StartupNotify=false

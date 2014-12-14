@@ -2,11 +2,11 @@
 SRC_DIR=$(dir $(realpath $(lastword $(MAKEFILE_LIST))))
 DEST_DIR=$(HOME)/
 DIRS := .i3
-FILES := .bash_aliases .bashrc .bash_profile .gitconfig .vim .vimrc .screenrc .hgrc .zshrc .i3/config
+FILES := .bash_aliases .bashrc .bash_profile .gitconfig .vim .vimrc .screenrc .hgrc .zshrc .i3/config .config/autostart/deactivate-touchpad.desktop
 
 
 #generated, don't touch if not absolutely necessary
-dest_DIRS := $(DIRS:%=$(DEST_DIR)%)
+dest_DIRS := $(DIRS:%=$(DEST_DIR)%) $(HOME)/.config/autostart
 dest_FILES := $(FILES:%=$(DEST_DIR)%)
 
 #some stuff for ease of handling things
@@ -28,4 +28,3 @@ mk_dirs: $(dest_DIRS)
 
 clean:
 	-rm -rf $(dest_FILES)
-	-rm -rf $(dest_DIRS)
