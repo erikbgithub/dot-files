@@ -70,3 +70,17 @@ let @f = '{gq}'
 
 " go fmt go files automatically at save
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
+" mappings
+
+let mapleader = "\<Space>"
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>x :x<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>Q :qa<CR>
+nnoremap <Leader>. @:<CR>
+nnoremap <BS> gg
+nnoremap <CR> G
+nnoremap <Leader>r :set relativenumber!<CR>
+nnoremap _ ddkP
+nnoremap - ddp
