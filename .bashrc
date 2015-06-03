@@ -18,7 +18,7 @@ echo -ne "\033]0;${LOCATION} (${USER}@${HOSTNAME})\007"
 }
 
 PROMPT_COMMAND='settitle'
-PS1='\[\033[01;32m\]\t\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]🍔  '
+PS1='\[\033[01;32m\]\t\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\[\033[01;33m\]🍔\[\033[00m\]  '
 export LANG=en_US.UTF-8 #this way screen will also start wtih utf8
 export EDITOR=vi
 
