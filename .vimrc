@@ -69,9 +69,21 @@ set smartcase
 let @f = '{gq}'
 
 " go fmt go files automatically at save
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
+augroup go_fmt
+    autocmd!
+    autocmd FileType go autocmd BufWritePre <buffer> Fmt
+augroup END
 
-" mappings
+
+" -------------------------------------------------------------------- snippets
+
+augroup python_abbrevspress
+    autocmd!
+    :autocmd FileType python :iabbrev <buffer> iff if:<left>
+    :autocmd FileType python :iabbrev <buffer> deff def ():<left><left><left>
+augroup END
+
+" -------------------------------------------------------------------- mappings
 
 let mapleader = "\<Space>"
 
@@ -85,6 +97,7 @@ nnoremap <Leader>. @:<CR>
 nnoremap <BS> gg
 nnoremap <CR> G
 nnoremap <Leader>r :set relativenumber!<CR>
+nnoremap <Leader>m :!make<CR>
 inoremap jk <esc>
 inoremap <esc> press jk to exit
 
@@ -102,3 +115,8 @@ nnoremap <Leader>gl :!git lols<CR>
 nnoremap <Leader>gla :!git lola<CR>
 nnoremap _ ddkP
 nnoremap - ddp
+
+" --------------------------------------------------- operator-pending mappings
+
+:onoremap in( :<c-u>normal! f(vi(<CR>
+:onoremap il( :<c-u>normal! F(vi(<CR>
