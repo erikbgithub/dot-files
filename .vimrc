@@ -74,6 +74,9 @@ autocmd FileType go autocmd BufWritePre <buffer> Fmt
 " mappings
 
 let mapleader = "\<Space>"
+
+nnoremap <Leader>ev :split $MYVIMRC<CR>
+nnoremap <Leader>sv :source $MYVIMRC<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>x :x<CR>
 nnoremap <Leader>q :q<CR>
@@ -82,5 +85,20 @@ nnoremap <Leader>. @:<CR>
 nnoremap <BS> gg
 nnoremap <CR> G
 nnoremap <Leader>r :set relativenumber!<CR>
+inoremap jk <esc>
+inoremap <esc> press jk to exit
+
+" surround words with ", ', ()
+nnoremap <Leader>s" viw<esc>a"<esc>hbi"<esc>lel
+nnoremap <Leader>s' viw<esc>a'<esc>hbi'<esc>lel
+nnoremap <Leader>s( viw<esc>a)<esc>hbi(<esc>lel
+nnoremap <Leader>S" viW<esc>a"<esc>hBi"<esc>lel
+nnoremap <Leader>S' viW<esc>a'<esc>hBi'<esc>lel
+nnoremap <Leader>S( viW<esc>a)<esc>hBi(<esc>lel
+
+" git specific stuff
+nnoremap <Leader>gd :!git diff<CR>
+nnoremap <Leader>gl :!git lols<CR>
+nnoremap <Leader>gla :!git lola<CR>
 nnoremap _ ddkP
 nnoremap - ddp
