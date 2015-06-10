@@ -98,6 +98,7 @@ nnoremap <BS> gg
 nnoremap <CR> G
 nnoremap <Leader>r :set relativenumber!<CR>
 nnoremap <Leader>m :!make<CR>
+nnoremap <Leader># :execute "rightbelow vsplit " . bufname("#")<CR>
 inoremap jk <esc>
 inoremap <esc> press jk to exit
 
@@ -113,7 +114,7 @@ nnoremap <Leader>S( viW<esc>a)<esc>hBi(<esc>lel
 nnoremap <Leader>gd :!git diff<CR>
 nnoremap <Leader>gl :!git lols<CR>
 nnoremap <Leader>gla :!git lola<CR>
-nnoremap _ ddkP
+nnoremap _ :move-2<CR>
 nnoremap - ddp
 
 " --------------------------------------------------- operator-pending mappings
