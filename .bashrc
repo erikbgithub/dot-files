@@ -86,3 +86,8 @@ deactivate-touchpad() {
         xinput set-prop "$touchpadid" "Device Enabled" 0
     fi
 }
+
+hotline() {
+    cd ~/.local/share/Steam/SteamApps/common/hotline_miami/
+    optirun ./hotline_launcher
+}
