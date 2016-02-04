@@ -8,6 +8,7 @@ set runtimepath+=/usr/local/go/misc/vim
 filetype plugin indent on
 filetype indent on
 syntax on
+set nosi "smart indent off
 
 "encoding
 scriptencoding utf-8
@@ -64,6 +65,10 @@ set noswapfile
 set ignorecase
 set smartcase
 
+" python indent smarter
+
+set indentexpr=GetPythonIndent(v:lnum)
+
 " macros
 
 let @f = '{gq}'
@@ -100,7 +105,6 @@ nnoremap <Leader>r :set relativenumber!<CR>
 nnoremap <Leader>m :!make<CR>
 nnoremap <Leader># :execute "rightbelow vsplit " . bufname("#")<CR>
 inoremap jk <esc>
-inoremap <esc> press jk to exit
 
 " surround words with ", ', ()
 nnoremap <Leader>s" viw<esc>a"<esc>hbi"<esc>lel
