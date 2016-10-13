@@ -31,11 +31,13 @@ set softtabstop=4
 set shiftround
 set wrap
 
-set textwidth=79
+"this seems to be reasonable but always bites you in the ass
+"set textwidth=79
+set textwidth=0
 set cursorline
 
 "show the problem column where you should break the line
-set colorcolumn=+1 "textwidth+1
+set colorcolumn=80 "+1 = textwidth+1
 " set colorcolumn to a not so annoying color
 highlight ColorColumn ctermbg=5
 " always show statusline
@@ -55,6 +57,10 @@ set undofile
 set undodir=$HOME/.vim/undo
 set undolevels=1000
 set undoreload=10000
+
+" history configs
+" I want a lot of history and modern day computers should be able to cache it
+set history=10000
 
 " no backups, what are VCS there for?
 set nobackup
