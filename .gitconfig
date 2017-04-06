@@ -9,6 +9,8 @@
 [user]
     name = Erik Bernoth
     email = erik.bernoth@gmail.com
+[status]
+    showUntrackedFiles = all
 [core]
     editor = vim
 
