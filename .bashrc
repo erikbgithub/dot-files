@@ -17,7 +17,16 @@ fi
 echo -ne "\033]0;${LOCATION} (${USER}@${HOSTNAME})\007"
 }
 
-PROMPT_COMMAND='settitle'
+# History optimization
+shopt -s histappend
+shopt -s cmdhist
+HISTFILESIZE=1000000
+HISTSIZE=1000000
+HISTCONTROL=ignoreboth
+HISTIGNORE='ls:bg:fg:history'
+HISTTIMEFORMAT='%F %T'
+
+PROMPT_COMMAND='history -a; settitle'
 PS1='\[\033[01;32m\]\t\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\[\033[01;33m\]🍔\[\033[00m\]  '
 export LANG=en_US.UTF-8 #this way screen will also start wtih utf8
 export EDITOR=vi
@@ -69,7 +78,6 @@ ertex() {
         pdflatex $1.tex -interaction=nonstopmode
     fi
 }
-PATH=$PATH:/home/erikb85/coding/golang/bin
 
 #virtualenvwrapper
 # export WORKON_HOME=$HOME/.virtualenvs
@@ -91,3 +99,7 @@ hotline() {
     cd ~/.local/share/Steam/SteamApps/common/hotline_miami/
     optirun ./hotline_launcher
 }
+
+export GOPATH="/Users/ebernoth/go"
+export PATH=$PATH:$GOPATH/bin:/Users/ebernoth/Downloads/node_modules/.bin:/Users/ebernoth/.wine
+export GOROOT="/usr/local/Cellar/go/1.10.2/libexec"

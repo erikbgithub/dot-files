@@ -1,10 +1,11 @@
 set nocompatible
 
-if exists("g:did_load_filetypes")
-    filetype off
-    filetype plugin indent off
-endif
-set runtimepath+=/usr/local/go/misc/vim
+filetype off
+filetype plugin indent off
+
+set rtp+=/Users/ebernoth/.vim/syntax
+set rtp+=/Users/ebernoth/.vim
+
 filetype plugin indent on
 filetype indent on
 syntax on
