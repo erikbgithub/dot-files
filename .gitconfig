@@ -56,3 +56,5 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
+[init]
+	defaultBranch = main
