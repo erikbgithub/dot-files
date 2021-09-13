@@ -2,7 +2,7 @@
 SRC_DIR=$(dir $(realpath $(lastword $(MAKEFILE_LIST))))
 DEST_DIR=$(HOME)/
 DIRS := .i3
-FILES := .bash_aliases .bashrc .bash_profile .gitconfig .vim .vimrc .screenrc .hgrc .zshrc .i3/config .config/autostart/deactivate-touchpad.desktop .emacs
+FILES := .bash_aliases .bashrc .bash_profile .gitconfig .vim .vimrc .screenrc .hgrc .zshrc .i3/config .config/autostart/deactivate-touchpad.desktop .emacs .tmux.conf
 
 
 #generated, don't touch if not absolutely necessary
