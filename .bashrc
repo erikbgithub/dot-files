@@ -41,30 +41,6 @@ source ~/.bash_aliases
 ghc () { git clone git@github.com:"${@?need to set param: <dev>/<proj>}"; }
 
 
-# a HidaV shortcut to the dev shell
-#
-# :param recipe: the name of the recipe that should be edited
-devshell() {
-    if [ -z "$1" ]; then
-        echo "need to set param: <recipe-name>"
-    else
-        cd ~/coding/HidaV
-        . ./hidav-init.sh .
-        bitbake -c devshell $1
-    fi
-}
-
-# a HidaV shortcut to building sd cards for HidaV devices
-#
-# :param usb: the path to the sd card, optional
-sdcard() {
-    [-z $1] && 1=/dev/sdc
-    cd ~/coding/Hidav
-    . ./hidav-init.sh .
-    cd ./tmp-eglibc/deploy/images/hidav-ti81xx
-    ./ti814x-bootable-sdcard.sh $1
-}
-
 # builds a complete tex file with all the indexes, libraries and so on.
 #
 # :param filename: which file should be compiled
@@ -79,14 +55,6 @@ ertex() {
     fi
 }
 
-#virtualenvwrapper
-# export WORKON_HOME=$HOME/.virtualenvs
-# export PROJECT_HOME=$HOME/Devel
-# source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
-# # add manual go installation
-# export PATH=$PATH:/usr/local/go/bin
-
-
 deactivate-touchpad() {
     touchpadid=`xinput | awk -F= '/Synaptics TouchPad/ { print $2; }' | awk '{print $1}'`
     if [[ $touchpadid =~ [[:digit:]] ]] ; then
@@ -95,11 +63,6 @@ deactivate-touchpad() {
     fi
 }
 
-hotline() {
-    cd ~/.local/share/Steam/SteamApps/common/hotline_miami/
-    optirun ./hotline_launcher
-}
-
 export GOPATH="/Users/ebernoth/go"
-export PATH=$PATH:$GOPATH/bin:/Users/ebernoth/Downloads/node_modules/.bin:/Users/ebernoth/.wine
+export PATH="$HOME/.npm/bin/:$PATH:$GOPATH/bin:/Users/ebernoth/Downloads/node_modules/.bin:/Users/ebernoth/.wine"
 export GOROOT="/usr/local/Cellar/go/1.10.2/libexec"

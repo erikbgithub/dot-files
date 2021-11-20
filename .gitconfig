@@ -58,3 +58,5 @@
 	prompt = false
 [init]
 	defaultBranch = main
+[http]
+	sslVerify = true
