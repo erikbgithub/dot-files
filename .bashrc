@@ -66,3 +66,6 @@ deactivate-touchpad() {
 export GOPATH="/Users/ebernoth/go"
 export PATH="$HOME/.config/itch/apps/butler/:$HOME/.npm/bin/:$PATH:$GOPATH/bin:/Users/ebernoth/Downloads/node_modules/.bin:/Users/ebernoth/.wine"
 export GOROOT="/usr/local/Cellar/go/1.10.2/libexec"
+
+
+export GPG_TTY=$(tty)

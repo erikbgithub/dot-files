@@ -9,6 +9,7 @@
 [user]
     name = Erik Bernoth
     email = erik.bernoth@gmail.com
+    signinkey = 7BD201A7B5BEFA69!
 [status]
     showUntrackedFiles = all
 [core]
