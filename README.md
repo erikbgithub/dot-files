@@ -30,11 +30,16 @@ Let's go:
     # make sure you have the newest git installed:
     $ sudo add-apt-repository ppa:git-core/ppa
     $ sudo apt-get install git
+
     # download this repo:
-    $ git clone git@github.com:erikb85/dot-files
+    $ git clone git@github.com:erikbgithub/dot-files
+    $ cd dot-files
+
     # install it
     $ make
 
+Then log out of your shell session and create a new one, so you can use all
+your configuration files.
 
 What do you think?
 ==================
