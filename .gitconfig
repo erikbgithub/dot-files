@@ -9,7 +9,7 @@
 [user]
     name = Erik Bernoth
     email = erik.bernoth@gmail.com
-    signinkey = 7BD201A7B5BEFA69!
+    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILhbiBI+zZ69V2v77UQkPQ6s2/fTwkXp3FVjksdfyjFe
 [status]
     showUntrackedFiles = all
 [core]
@@ -52,12 +52,18 @@
     stage = add
     unstage = reset HEAD
 [mergetool]
-	keepBackup = false
+    keepBackup = false
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [difftool]
-	prompt = false
+    prompt = false
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [http]
-	sslVerify = true
+    sslVerify = true
+[gpg]
+    format = ssh
+[gpg "ssh"]
+    program = /opt/1Password/op-ssh-sign
+[commit]
+    gpgsign = true
