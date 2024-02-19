@@ -8,8 +8,8 @@
 
 [user]
     name = Erik Bernoth
-    email = erik.bernoth@gmail.com
-    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILhbiBI+zZ69V2v77UQkPQ6s2/fTwkXp3FVjksdfyjFe
+  email = monimagspielen@gmx.de
+	signingkey = B3184097F006AFFE9580B57B9EDC992420B87B96
 [status]
     showUntrackedFiles = all
 [core]
@@ -61,9 +61,5 @@
     defaultBranch = main
 [http]
     sslVerify = true
-[gpg]
-    format = ssh
-[gpg "ssh"]
-    program = /opt/1Password/op-ssh-sign
 [commit]
     gpgsign = true
