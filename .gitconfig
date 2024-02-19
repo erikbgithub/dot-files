@@ -61,5 +61,3 @@
     defaultBranch = main
 [http]
     sslVerify = true
-[commit]
-    gpgsign = true
